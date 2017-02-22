@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Post{% endblock %}
+
+{% block page_content %}
+<div class="static-content">
+	{% include '_posts.html' %}
+</div>
+<div class="add-comment">
+	{{ wtf.quick_form(form) }}
+{% endblock %}
